@@ -1,0 +1,75 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { TranslationSet } from "./types";
+
+export const translations: Record<'en' | 'ar', TranslationSet> = {
+  en: {
+    title: "SmailPro Temp Mail Core",
+    subtitle: "A professional temporary mail platform. Create custom premium email addresses, inspect mailbox operations in real-time, experiment with developer APIs, explore the database schema, and test SMTP routes with Gemini integration.",
+    createBtn: "Generate Random Address",
+    extendBtn: "Extend 10 Mins",
+    regenerateBtn: "Create Custom Username",
+    copySuccess: "Copied to clipboard!",
+    expiresIn: "Expires in",
+    noEmails: "Your inbox is empty. Waiting for dynamic SMTP inbound transmissions...",
+    sender: "Sender",
+    subject: "Subject",
+    received: "Received At",
+    inbox: "Temporary Mail Inbox",
+    refreshing: "Listening for SMTP relays...",
+    viewHeaders: "View SMTP Headers",
+    backInbox: "Back to Inbox",
+    simWizardTitle: "Simulate SMTP / Inbound Relay",
+    simWizardDesc: "Since real external DNS/MX routes can't bind to your container, use this developer tool to trigger incoming messages. Power it with Gemini to write customized, contextual HTML payloads, or use high-fidelity brand presets.",
+    simTopicLabel: "Let Gemini generate a custom email from any brand:",
+    simBtn: "Inbound Simulated Relay",
+    architectTitle: "SmailPro Core Architecture Tour",
+    architectDesc: "Temporary mail platforms are composed of decoupled services. Interactive explore how DNS records, mail handlers, job queues, and telemetry interact.",
+    apiTitle: "Developer REST API Playground",
+    apiDesc: "SmailPro provides high-capacity REST endpoints for developers to integrate temporary address flows inside their apps. Test API endpoints live right here and see real responses returned by our system.",
+    apiTryBtn: "Test REST Request",
+    logsTitle: "Active Telemetry & Logs",
+    logsDesc: "View live scrolling terminal event streaming of all SMTP, Postgres SQL queries, BullMQ cleanups, and API sessions running in the background.",
+    adminTitle: "SmailPro Admin Control Panel",
+    adminDesc: "Real-time key statistics, network speeds, resource meters, and temporary address domain pool rotators.",
+    upgradeBtn: "Upgrade to Premium",
+    premiumStatus: "VIP Premium",
+    proFeatureTitle: "Premium VIP Address Plan unlocked successfully!"
+  },
+  ar: {
+    title: "منصة بريد مؤقت إحترافية - SmailPro",
+    subtitle: "بنية تحتية متطورة لإنشاء البريد المؤقت الاحترافي. قم بإنشاء عناوين مخصصة على خوادم آمنة، وفحص عمليات الصندوق والبروتوكولات (SMTP Headers) مباشرة، والوصول إلى لوحة المطورين (APIs)، واستكشاف مخطط قواعد البيانات وتشغيل محاكاة الإرسال المدعومة بالذكاء الاصطناعي Gemini.",
+    createBtn: "إنشاء عنوان عشوائي تلقائي",
+    extendBtn: "تمديد الصلاحية 10 دقائق",
+    regenerateBtn: "تخصيص اسم المستخدم والمسار",
+    copySuccess: "تم نسخ البريد الإلكتروني بنجاح!",
+    expiresIn: "ينتهي بعد",
+    noEmails: "صندوق الوارد فارغ. في انتظار وصول رسائل SMTP من خوادم البريد الإلكتروني...",
+    sender: "المرسل",
+    subject: "العنوان",
+    received: "وقت الاستلام",
+    inbox: "صندوق الرسائل المؤقت",
+    refreshing: "الاستماع الإلكتروني لخوادم البريد...",
+    viewHeaders: "عرض خصائص ترويسة SMTP Headers",
+    backInbox: "الرجوع لصندوق البريد",
+    simWizardTitle: "محاكاة وصول رسالة SMTP Inbound",
+    simWizardDesc: "من ميزات بيئات التطوير إمكانية محاكاة تدفق Mail Relay. استخدم هذه اللوحة لتوليد رسائل واردة مخصصة. يمكنك استخدام ذكاء الاصطناعي Gemini لكتابة رسائل بريد إلكتروني HTML غنية بالتواقيع والتفعيل، أو استدعاء قوالب حقيقية جاهزة.",
+    simTopicLabel: "اطلب من ذكاء Gemini إنشاء بريد مخصص من أي شركة:",
+    simBtn: "توليد الرسالة وضخّها للصندوق",
+    architectTitle: "البنية الهندسية الكاملة لمنصة SmailPro",
+    architectDesc: "تتكون منصات البريد المؤقت من 5 أنظمة متطورة تعمل معاً. استكشف كيف تتعاون سجلات DNS، ومعالجات البريد، وقوام بمرور البيانات، ولوحات المراقبة.",
+    apiTitle: "لوحة اختبار مطوري البرمجيات REST API",
+    apiDesc: "تقدم SmailPro نهايات برمجية للمطورين لأتمتة عمليات البريد المؤقت بمشروعاتهم. تواصل وافحص النهايات البرمجية حياً بالضغط على زر التنفيذ ومراجعة استجابات JSON الحقيقية.",
+    apiTryBtn: "تنفيذ الاتصال البرمجي",
+    logsTitle: "سجل الأحداث والمراقبة النشطة Telemetry",
+    logsDesc: "عرض حي لمخرجات سطر أوامر النظام، واستعلامات SQL لقاعدة بيانات Postgres، ومهام BullMQ، واتصالات REST الجارية بالخلفية.",
+    adminTitle: "لوحة تحكم المشرف والمدير العام لـ SmailPro",
+    adminDesc: "عرض إحصائيات الاستهلاك الكلي لخوادم Dovecot، وسرعات الشبكة، ومؤشرات الذاكرة، بالإضافة لإدارة نطاقات (Domains) البريد المؤقت.",
+    upgradeBtn: "ترقية الباقة للمحترفين Pro VIP",
+    premiumStatus: "باقة VIP المدفوعة",
+    proFeatureTitle: "تم ترقية حسابك وتفعيل ميزات التخصيص غير المحدودة بنجاح!"
+  }
+};

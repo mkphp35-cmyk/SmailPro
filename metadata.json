@@ -1,0 +1,6 @@
+{
+  "name": "SmailPro Temp Mail Core",
+  "description": "A high-fidelity temporary mail system simulation with professional dual-language (AR/EN) frontend, custom mail engines, admin telemetry, developer API playgrounds, and interactive database exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
